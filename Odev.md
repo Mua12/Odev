@@ -238,13 +238,15 @@ Output --> Smith
 
 **3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.**
 
-`UPDATE employee` -- ismi Marrissa olan satirdaki bilgileri yenile.
+-- ismi Marrissa olan satirdaki bilgileri yenile.
+`UPDATE employee` 
 `SET name     = 'Zeynep',`
 	    `birthday = '1992-10-04',`
 	    `email    = 'zeynep92@gmail.com'`
 `WHERE id =1;`
 
-`UPDATE employee` -- ismi Marrissa olan satirdaki bilgileri yenile.
+-- ismi Marrissa olan satirdaki bilgileri yenile.
+`UPDATE employee` 
 `SET name     = 'Zeynep',`
 	    `email    = 'zeynep92@gmail.com',`
 	    `birthday = '1992-10-04'`
@@ -256,31 +258,38 @@ Output --> Smith
 	    `email    = 'XXXXX'`
 `WHERE id >45;`
 
-`UPDATE employee` -- ismi Demetra olan kisinin satirindeki email adresini guncelle.
+-- ismi Demetra olan kisinin satirindeki email adresini guncelle.
+`UPDATE employee` 
 `SET email    = 'bir_demetray_ımben@tcdd.com'`
 `WHERE name   = 'Demetra';`
 
-`UPDATE employee` -- '1954-02-25' dogum tarihli kisinin verilerini guncelle. 
+-- '1954-02-25' dogum tarihli kisinin verilerini guncelle.
+`UPDATE employee`  
 `SET name     = 'Veli',`
 	    `email    = 'veli_akman@gmail.com'`
 `WHERE birthday = '1954-02-25';`
 
-`UPDATE employee` -- 25. id degerine sahip satirdaki ismi guncelle.
+-- 25. id degerine sahip satirdaki ismi guncelle.
+`UPDATE employee` 
 `SET name = 'Hilal'`
 `WHERE id = 25;`
 
 **4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.**
 
-`DELETE FROM employee` -- id si 9 olan satiri listeden sil.
+-- id si 9 olan satiri listeden sil.
+`DELETE FROM employee` 
 `WHERE id = 9;`
 
-`DELETE FROM employee` -- email i icinde 3 adet e bulunan satirlari listeden sil.
+-- email i icinde 3 adet e bulunan satirlari listeden sil.
+`DELETE FROM employee` 
 `WHERE email LIKE '%e%e%e%';`
 
-`DELETE FROM employee` -- 1955 den once doganlari listeden sil. 
+-- 1955 den once doganlari listeden sil.
+`DELETE FROM employee`  
 `WHERE birthday BETWEEN '1955-01-01' AND '1965-01-01'; `
 
-`DELETE FROM employee` -- .com ile biten email leri listeden sil.
+-- .com ile biten email leri listeden sil.
+`DELETE FROM employee` 
 `WHERE email ILIKE '%.COM';`
 
 -- Kurt,Reuven, Aylmar, Tessy ve Claudie isimlerine sahip satirlari sil.
