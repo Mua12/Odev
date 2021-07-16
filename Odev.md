@@ -338,7 +338,7 @@ FULL JOIN sorgusunu yazınız.**
 
 ## Ödev 11
 
-**1. *actor* ve *customer* tablolarında bulunan *first_name* sütunları için tüm verileri sıralayalım.
+**1. *actor* ve *customer* tablolarında bulunan *first_name* sütunları için tüm verileri sıralayalım.**
 
 `SELECT first_name FROM actor`
 `UNION`
@@ -359,6 +359,7 @@ FULL JOIN sorgusunu yazınız.**
 **4. İlk 3 sorguyu tekrar eden veriler için de yapalım.**
 
 *4.1*
+
 `SELECT first_name FROM actor`
 `UNION ALL`
 `SELECT first_name FROM customer;`
@@ -374,3 +375,6 @@ FULL JOIN sorgusunu yazınız.**
 `SELECT first_name FROM actor`
 `EXCEPT ALL`
 `SELECT first_name FROM customer;`
+
+ ***Ek Bilgi:*** 
+ *~~ = LIKE ,  ~~* = ILIKE , !~~ = NOT LIKE ,  !~~* = NOT LIKE*
